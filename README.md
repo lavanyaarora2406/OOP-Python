@@ -1,43 +1,44 @@
-import pypandoc
+# OOP in Python
 
-content = r"""# OOP with Python
+A hands-on series of notebooks covering Object-Oriented Programming concepts in Python, from the basics to abstraction.
 
-Python OOP notes and practice covering the core concepts of Object-Oriented Programming.
+## 📘 Contents
 
-## Topics Covered
-
-- Classes & Objects
-- Constructors & `self`
+### `Oop_Part-I.ipynb`
+- What is OOP?
+- Classes and Objects
+- Banking application (coding example)
 - Methods vs Functions
-- Magic/Dunder Methods
-- Operator Overloading
+- Class diagrams
+- Magic/Dunder methods
+- Constructors and the concept of `self`
+- Fraction class implementation
+- Operator overloading: `__str__`, `__add__`, `__sub__`, `__mul__`, `__truediv__`
+
+### `Oop(Part-II).ipynb`
+- How objects access attributes
+- Creating attributes from outside a class
+- Reference variables
+- Mutability of objects
 - Encapsulation
-- Reference Variables & Mutability
-- Static Variables & Methods
-- Aggregation
-- Inheritance & Types of Inheritance
-- Method Overriding & `super()`
-- Polymorphism & Method Overloading
-- Abstraction & Abstract Classes
+- Collections of objects
+- Static variables and methods
 
-## Practical Examples
+### `Oop_Part-III.ipynb`
+- Class relationships
+- Aggregation (with class diagrams)
+- Inheritance (with class diagrams)
+- Constructors in inheritance
+- Method overriding and the `super` keyword
+- Types of inheritance: Single, Multilevel, Hierarchical, Multiple
+- Hybrid inheritance and the diamond problem
+- Polymorphism: method overriding vs overloading
+- Operator overloading
+- Abstraction: abstract classes and a BankApp example
 
-- Banking Application
-- Fraction Class
-- Inheritance Examples
-- `BankApp` using Abstract Classes
+## 🛠 Tech
+- Python 3
+- Jupyter Notebook
 
-## Notebooks
-
-- `Oop_Part-I.ipynb`
-- `Oop(Part-II).ipynb`
-- `Oop_Part-III.ipynb`
-
-## Purpose
-
-A collection of notes and coding practice to build a strong foundation in **Python OOP**.
-"""
-
-output_path = "/mnt/data/README.md"
-pypandoc.convert_text(content, "md", format="md", outputfile=output_path, extra_args=["--standalone"])
-print("Updated README.md")
+## 🎯 Goal
+Build a strong foundation in OOP concepts through practical coding examples, primarily centered around a banking application use case.
